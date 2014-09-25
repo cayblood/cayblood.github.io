@@ -1,0 +1,54 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/font-roboto/roboto.html">
+<link rel="import" href="bower_components/core-icon/core-icon.html">
+<link rel="import" href="bower_components/basic-slideshow/basic-slideshow.html">
+
+<polymer-element name="twt-plugin" noscript>
+  <template>
+    <style>
+      :host {
+        margin: 20px;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        font-family: 'RobotoDraft', sans-serif;
+        font-size: 12px;
+      }
+      .twt-right {
+        margin-right: 2px;
+      }
+      .quotation {
+        display: block;
+        text-align: center;
+        border: 0;
+        margin: 0;
+        padding: 0 5px 0 5px;
+        font-family: 'Times New Roman', serif;
+        font-style: italic;
+        font-size: 140%;
+      }
+    </style>
+    <div horizontal justified layout>
+      <div>
+        Left column
+      </div>
+      <div self-start flex>
+        <basic-slideshow horizontal center-justified layout relative interval="4000">
+          <div class="quotation">Be honest</div>
+          <div class="quotation">Be kind</div>
+          <div class="quotation">Listen well</div>
+          <div class="quotation">Share the floor</div>
+          <div class="quotation">Presume good will</div>
+          <div class="quotation">Acknowledge the differences</div>
+          <div class="quotation">Answer the tough questions</div>
+          <div class="quotation">Give credit where credit is due</div>
+          <div class="quotation">Speak only for yourself</div>
+          <div class="quotation">Keep private things private</div>
+        </basic-slideshow>
+      </div>
+      <div class="twt-right">
+        Right column
+      </div>
+    </div>
+  </template>
+</polymer-element>
