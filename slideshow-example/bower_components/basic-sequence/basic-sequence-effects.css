@@ -62,7 +62,7 @@ polyfill-next-selector {
   content: ':host([effect=crossfade]) #effectContainer > .sequenceTransition.offStage';
 }
 :host([effect=crossfade]) ::content > .sequenceTransition.offStage {
-  opacity: 0.99;
+  opacity: 0.0;
 }
 
 polyfill-next-selector {
